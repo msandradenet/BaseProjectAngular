@@ -1,0 +1,67 @@
+<div class="container main-container">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Cadastro de Clientes</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <button [routerLink]="['/cliente-criar']" class="col-sm-2 offset-sm-10 btn btn-dark">
+                <i class="fas fa-check"></i>
+                Novo
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="dataTables_wrapper dt-bootstrap4">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table id="table" class="table table-striped table-bordered table-sm row-border hover" role="grid">
+                      <thead>
+                        <tr>
+                          <th>Ident.</th>
+                          <th>Nome</th>
+                          <th>Sobrenome</th>
+                          <th>CPF</th>
+                          <th>Idade</th>
+                          <th>Profissão</th>
+                          <th>Status</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let item of data">
+                          <td width="10%">{{item.idCliente}}</td>
+                          <td>{{item.nome | titlecase }}</td>
+                          <td>{{item.sobrenome | titlecase }}</td>
+                          <td>{{item.cpf | mask: 'CPF_CNPJ'}}</td>
+                          <td>{{((item.idade !== null && item.idade !== undefined) ? item.idade : 0) + ' Anos' }}</td>
+                          <td>{{item.profissao.descricao}}</td>
+                          <td>{{(item.status == true) ? "Ativo" : "Inativo"}}</td>
+                          <td class="text-right py-0 align-middle">
+                            <div class="btn-group btn-group-sm">
+                              <button [routerLink]="['/cliente-editar', item.idCliente]" class="btn btn-info"><i
+                                  class="fas fa-edit"></i></button>
+                              <button (click)="excluirCliente(item.idCliente)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

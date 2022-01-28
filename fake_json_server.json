@@ -1,0 +1,161 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "mouse Microsoft",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1988-07-22",
+      "profissao": 1,
+      "status": true
+    },
+    {
+      "id": 2,
+      "nome": "Teclado Microsoft",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 4,
+      "status": true
+    },
+    {
+      "id": 3,
+      "nome": "Monitor Samsung",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 1,
+      "status": true
+    },
+    {
+      "id": 4,
+      "nome": "Laptop Asus",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 2,
+      "status": true
+    },
+    {
+      "id": 5,
+      "nome": "Headset Microsoft",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 1,
+      "status": true
+    },
+    {
+      "id": 6,
+      "nome": "Webcam Logitech",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 1,
+      "status": true
+    },
+    {
+      "id": 7,
+      "nome": "Galaxy S10+",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 2,
+      "status": true
+    },
+    {
+      "id": 8,
+      "nome": "Mousepad Microsoft",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 3,
+      "status": true
+    },
+    {
+      "id": 9,
+      "nome": "Go Pro 8",
+      "sobrenome": "Santos Andrade",
+      "cpf": "42762879876",
+      "dtNasc": "1994-09-16",
+      "profissao": 4,
+      "status": true
+    },
+    {
+      "id": 357,
+      "nome": "Jussara",
+      "sobrenome": "Rocha",
+      "cpf": "11122233396",
+      "dtNasc": "2022-01-25",
+      "profissao": 3,
+      "status": true
+    },
+    {
+      "id": 909,
+      "nome": null,
+      "sobrenome": "dddddddddddddddddd",
+      "cpf": "52351499476",
+      "dtNasc": "2004-01-24",
+      "profissao": 4,
+      "status": false
+    },
+    {
+      "id": 802,
+      "nome": null,
+      "sobrenome": "sssssssssssssss",
+      "cpf": "11122233396",
+      "dtNasc": "2004-01-24",
+      "profissao": 1,
+      "status": true
+    },
+    {
+      "id": 438,
+      "nome": null,
+      "sobrenome": "dddddddddddddddddd",
+      "cpf": "42762879876",
+      "dtNasc": "2004-01-25",
+      "profissao": 2,
+      "status": false
+    },
+    {
+      "id": 951,
+      "nome": "Condôminio Vivenda dos Sonhos",
+      "sobrenome": "dddddddddddddddddd",
+      "cpf": "42762879876",
+      "dtNasc": "2004-01-25",
+      "profissao": 2,
+      "status": false
+    },
+    {
+      "id": 949,
+      "nome": "teste teste",
+      "sobrenome": "dddddddddddddddddd",
+      "cpf": "42762879876",
+      "dtNasc": "2004-01-07",
+      "profissao": 1,
+      "status": true
+    }
+  ],
+  "profissoes": [
+    {
+      "id": 1,
+      "descricao": "Desenvolvedor",
+      "status": true
+    },
+    {
+      "id": 2,
+      "descricao": "Arquiteto",
+      "status": true
+    },
+    {
+      "id": 3,
+      "descricao": "Engenheiro",
+      "status": true
+    },
+    {
+      "id": 4,
+      "descricao": "Desenhista",
+      "status": true
+    }
+  ]
+}

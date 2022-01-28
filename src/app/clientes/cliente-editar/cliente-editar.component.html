@@ -1,0 +1,97 @@
+<div class="container main-container">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Editar Clientes</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <form [formGroup]="formCliente" name="formCliente" (ngSubmit)="onSubmitForm(formCliente)">
+                        <div class="card">
+                            <div class="card-header">
+                                <button [routerLink]="['/clientes']" class="col-sm-2 btn btn-secondary"><i
+                                        class="fas fa-arrow-left"></i>
+                                    Voltar
+                                </button>
+                                <button class="col-sm-2 offset-sm-8 btn btn-dark"><i class="fas fa-check"></i>
+                                    Salvar
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="dataTables_wrapper dt-bootstrap4">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-1">
+                                                    <label>Cod.:</label>
+                                                    <input class="form-control" formControlName="idCliente" readonly>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Nome:</label>
+                                                    <input class="form-control" [ngClass]="aplicaCssErro('nome')"
+                                                        formControlName="nome">
+                                                </div>
+                                                <div class="form-group col-md-7">
+                                                    <label>Sobrenome:</label>
+                                                    <input class="form-control" [ngClass]="aplicaCssErro('sobrenome')"
+                                                        formControlName="sobrenome">
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Cpf:</label>
+                                                    <input class="form-control" [ngClass]="aplicaCssErro('cpf')"
+                                                        maxlength="14" mask="CPF_CNPJ" type="text"
+                                                        formControlName="cpf" />
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Data de Nascimento:</label>
+                                                    <input type="date" class="form-control"
+                                                        [ngClass]="aplicaCssErro('dtNasc')" formControlName="dtNasc">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Profisão:</label>
+                                                    <select class="form-control"
+                                                        [ngClass]="aplicaCssErro('idProfissao')"
+                                                        formControlName="idProfissao">
+
+                                                        <option *ngFor="let item of listaProfisoes"
+                                                            [ngValue]="item.idProfissao">
+                                                            {{item.descricao}}</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <label style="margin-bottom: 20px;">Status:</label>
+                                                    <br>
+                                                    <div class="form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                formControlName="status" [value]="true">
+                                                            Ativo
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                formControlName="status" [value]="false">
+                                                            Inativo
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
